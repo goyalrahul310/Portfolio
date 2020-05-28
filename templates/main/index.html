@@ -1,0 +1,52 @@
+{% extends 'main/base.html' %}
+ 
+{% block content %}
+{% include 'main/nav.html' %}
+
+ 
+
+<div class = "container">
+	
+
+	  <div class="row">
+    <div class="col s12 m4">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">Rahul Goyal</span>
+           <img class="materialboxed responsive-img"  src="https://avatars1.githubusercontent.com/u/47034921?s=460&u=26c842aefbbfb229cc48f4d28e319710a4bc0b2b&v=4">
+          
+        </div>
+        <div class="card-action">
+          <a href="https://github.com/goyalrahul310/">Github</a>
+          <a href="https://www.linkedin.com/in/rahul-goyal-a3648417a/">Linkedin</a>
+        </div>
+      </div>
+    </div>
+      <div class="col s12 m8">
+      <div class="card blue-grey lighten-1">
+        <div class="card-content white-text">
+          <span class="card-title">About me</span>
+          <p>Self-Motivated and hardworking fresher seeking for oppurtunity to work in field like software Development,Machine Learning.Ready to expand my Knowledge and eager to learn new technologies with full dedication and hardwork .</p>
+        </div>
+       
+      </div>
+    </div>
+
+  </div>
+       
+</div>
+
+{% endblock %}
+{% block script %}
+  <script >
+  	
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.materialboxed');
+    var instances = M.Materialbox.init(elems);
+  });
+
+ 
+        
+
+  </script>
+{% endblock %}
